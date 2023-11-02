@@ -27,7 +27,14 @@ async function writeMDFile(array, writePath) {
   } catch (error) {
     console.log('errrorrr!!!');
   }
-  let content = "# 九月份 Diary"
+  let month = writePath.match(/.*\\(.*)\\.*/)
+  const Month = {
+    Sept:'九',
+    Oct:'十',
+    Nov:'十一',
+    Dec:'十二'
+  }
+  let content = `# ${Month[month[1]]}月份 Diary`
   result.forEach((item, index) => {
     content += wrap + titles[index] + wrap + item + wrap
   });

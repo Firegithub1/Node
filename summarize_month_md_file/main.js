@@ -11,7 +11,7 @@ async function main(path, fileName = "sort") {
   writeMDFile(res, writePath)
 }
 
-let path = 'D:\\Diary\\Aug'
+let path = 'D:\\Diary\\Oct'
 let fileName = "000Sort"
 
 main(path,fileName )
