@@ -1,3 +1,8 @@
+/*
+ * @Author: YiY
+ * @Date: 2023-12-06 09:41:41
+ * @LastEditTime: 2023-12-29 09:43:43
+ */
 const { getFilePaths } = require('./util/filePath/getPath.js')
 const { writeMDFile } = require('./util/fileContent/promiseMonthMDSort.js')
 const fs = require('fs');
@@ -11,7 +16,7 @@ async function main(path, fileName = "sort") {
   writeMDFile(res, writePath)
 }
 
-let path = 'D:\\Diary\\Oct'
+let path = 'D:\\Diary\\Dec'
 let fileName = "000Sort"
 
 main(path,fileName )

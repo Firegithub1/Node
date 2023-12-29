@@ -1,3 +1,8 @@
+/*
+ * @Author: YiY
+ * @Date: 2023-12-29 09:42:55
+ * @LastEditTime: 2023-12-29 09:42:55
+ */
 const fs = require('fs');
 const { resolve } = require('path');
 
@@ -32,7 +37,8 @@ async function writeMDFile(array, writePath) {
     Sept:'九',
     Oct:'十',
     Nov:'十一',
-    Dec:'十二'
+    Dec:'十二',
+    Jan:'一'
   }
   let content = `# ${Month[month[1]]}月份 Diary`
   result.forEach((item, index) => {
